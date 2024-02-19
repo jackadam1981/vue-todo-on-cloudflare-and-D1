@@ -2,48 +2,62 @@
 
 import Footer from './components/Footer.vue'
 import Header from './components/Header.vue'
-const msg = 'hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!hello world!'
+import Content from './components/Content.vue'
 
 </script>
 
 <template>
-  <header class="header">
-    <Header />
-  </header>
-
-  <main class="main">
-    {{ msg }}
-  </main>
-  <footer class="footer">
-    <Footer />
-  </footer>
+  <div class="body">
+    <header class="header">
+      <Header />
+    </header>
+    <main class="main">
+      <Content />
+    </main>
+    <footer class="footer">
+      <Footer />
+    </footer>
+  </div>
 </template>
 
 <style scoped>
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .header {
   background-color: gainsboro;
   font-size: xx-large;
+  position: fixed;
+  top: 0px;
+  height: 50px;
+  left: 0px;
+  right: 0px;
 }
 
 .main {
   background-color: azure;
   font-size: medium;
-  position: absolute;
+  position: fixed;
   top: 50px;
-  bottom: 45px;
-  height: auto;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+  left: 0px;
+  bottom: 30px;
+  width: 100%;
+  overflow: overlay;
+
 
 }
 
 .footer {
-  background-color: beige;
-  font-size: x-large;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 45px;
+  background-color: orange;
+  height: 30px;
   width: 100%;
+  position: fixed;
+  bottom: 00px;
+  left: 0px;
+  right: 0px;
+
 }
 </style>

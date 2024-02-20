@@ -15,10 +15,12 @@
     "db_generate": "drizzle-kit generate:sqlite",
     "db_push_local": "wrangler d1 migrations apply d1-todo --local",
     "db_push_remote": "wrangler d1 migrations apply d1-todo ",
-    "db_drop":"drizzle-kit drop"
+    "db_drop": "drizzle-kit drop"
   },
   "dependencies": {
+    "@cloudflare/pages-plugin-graphql": "^1.0.2",
     "drizzle-orm": "^0.29.3",
+    "graphql": "^16.8.1",
     "pinia": "^2.1.7",
     "vue": "^3.4.15"
   },

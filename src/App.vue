@@ -3,6 +3,7 @@
 import Footer from './components/Footer.vue'
 import Header from './components/Header.vue'
 import Content from './components/Content.vue'
+import { RouterView } from 'vue-router';
 
 </script>
 
@@ -12,7 +13,7 @@ import Content from './components/Content.vue'
       <Header />
     </header>
     <main class="main">
-      <Content />
+      <RouterView></RouterView>
     </main>
     <footer class="footer">
       <Footer />
